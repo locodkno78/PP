@@ -1,0 +1,15 @@
+body {
+    padding: 2%;
+    background-image: url('./img/Casa-Historica.jpg');
+    background-size: 100%; /* Esto ajusta la imagen para que cubra todo el fondo */    
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.container{
+    text-align: center;
+}
+
+.navbar{
+    margin-bottom: 2%;
+}
+
