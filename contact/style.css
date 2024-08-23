@@ -1,0 +1,114 @@
+html,
+body {
+    height: 100%;
+    /* Asegura que el body y html ocupen todo el alto de la ventana */
+    margin: 0;
+    /* Elimina cualquier margen predeterminado */
+    padding: 0;
+    /* Elimina cualquier padding predeterminado */
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    background-image: url('../img/Casa-Historica.jpg');
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen de fondo */
+}
+
+/* Estilo del contenedor del formulario */
+.container {
+    background-color: #fff;
+    /* Fondo blanco para el formulario */
+    padding: 30px;
+    /* Espaciado interno del formulario */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para efecto de elevación */
+    text-align: center;
+    max-width: 400px;
+    /* Ancho máximo más razonable para el formulario */
+    width: 100%;
+    /* Hace que el contenedor se ajuste al ancho disponible hasta el máximo */
+    margin: 20px;
+    /* Añade un margen para separar el formulario del borde de la pantalla */
+}
+
+.navbar {
+    height: 80px;
+    /* Ajusta esta altura según lo que necesites */
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    font-size: 25px;
+}
+
+/* Estilo para los labels */
+.form-label {
+    font-weight: bold;
+    /* Hace que el texto de los labels sea negrita */
+    color: #333;
+    /* Color del texto de los labels */
+    text-align: left;
+    /* Alinea los labels a la izquierda */
+    display: block;
+    /* Hace que los labels ocupen toda la fila */
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+    border-radius: 5px;
+    /* Bordes redondeados para los campos de entrada */
+    border: 1px solid #ddd;
+    /* Bordes grises claros */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 15px;
+    /* Espaciado inferior entre campos */
+}
+
+/* Estilo del botón de envío */
+.btn-primary {
+    background-color: #007bff;
+    /* Color de fondo azul para el botón */
+    border-color: #007bff;
+    /* Color de borde del botón */
+    width: 100%;
+    /* El botón ocupa todo el ancho del contenedor */
+    padding: 10px;
+    /* Espaciado interno del botón */
+    font-size: 16px;
+    /* Tamaño de fuente del texto del botón */
+    border-radius: 5px;
+    /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease;
+    /* Transición suave para cambios de color de fondo */
+}
+
+/* Efecto hover para el botón */
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Color de fondo azul más oscuro en hover */
+}
+
+/* Estilo del área de texto para la consulta */
+textarea.form-control {
+    resize: none;
+    /* Impide que el usuario cambie el tamaño del área de texto */
+}
+
+/* Estilo de los mensajes de validación */
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+    /* Color de borde rojo para entradas inválidas */
+}
+
+.was-validated .form-control:valid {
+    border-color: #28a745;
+    /* Color de borde verde para entradas válidas */
+}

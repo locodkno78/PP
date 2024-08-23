@@ -3,16 +3,13 @@ html, body {
     margin: 0; /* Elimina cualquier margen predeterminado */
     padding: 0; /* Elimina cualquier padding predeterminado */
     display: flex;
-    flex-direction: column;
-    background-image: url('./img/Casa-Historica.jpg');
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen de fondo */
+    flex-direction: column;    
 }
 
 .container{
     text-align: center;
     flex: 1;
+    margin-top: 20%;
 }
 
 .navbar {
@@ -20,9 +17,4 @@ html, body {
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
     font-size: 25px;
-}
-
-.card-img-top {
-    height: 200px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
 }

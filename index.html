@@ -15,51 +15,29 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Practicas</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Card 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Card 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Card 3</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <div id="navbar-placeholder"></div>
   <div class="container">
     <div class="row justify-content-center align-items-center min-vh-100">
       <!-- Tarjeta 1 -->
       <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <div class="card text-bg-dark">
-          <div class="card-header">Card 1</div>
-          <div class="card-body">
-            <img src="./img/san-miguel.jpg" class="card-img-top" alt="...">
-            <h5 class="card-title">San Miguel de Tucumán</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil dolorem vero
-              odit, odio harum culpa amet eum maxime non, expedita maiores unde necessitatibus magni sapiente provident,
-              impedit fuga quidem.</p>
+        <a href="./card1/card1.html" class="text-decoration-none">
+          <div class="card text-bg-dark" data-bs-toggle="tooltip" title="Click para ir a la Card 1">
+            <div class="card-header">Card 1</div>
+            <div class="card-body">
+              <img src="./img/san-miguel.jpg" class="card-img-top" alt="...">
+              <h5 class="card-title">San Miguel de Tucumán</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil dolorem vero
+                odit, odio harum culpa amet eum maxime non, expedita maiores unde necessitatibus magni sapiente
+                provident,
+                impedit fuga quidem.</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <!-- Tarjeta 2 -->
       <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <div class="card text-bg-dark">
+        <a href="./card2/card2.html" class="text-decoration-none">
+        <div class="card text-bg-dark" data-bs-toggle="tooltip" title="Click para ir a la Card 2">
           <div class="card-header">Card 2</div>
           <div class="card-body">
             <img src="./img/tur-avent.jpg" class="card-img-top" alt="...">
@@ -69,10 +47,12 @@
               mollitia aliquid, nostrum necessitatibus?</p>
           </div>
         </div>
+        </a>
       </div>
       <!-- Tarjeta 3 -->
       <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <div class="card text-bg-dark">
+        <a href="./card3/card3.html" class="text-decoration-none">
+        <div class="card text-bg-dark" data-bs-toggle="tooltip" title="Click para ir a la Card 3">
           <div class="card-header">Card 3</div>
           <div class="card-body">
             <img src="./img/SM-Tucuman-gastronomia.jpg" class="card-img-top" alt="...">
@@ -82,6 +62,7 @@
               Culpa, recusandae! Minus, aut?</p>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </div>
@@ -95,6 +76,6 @@
       </ul>
     </div>
   </footer>
+  <script src="./index.js"></script>
 </body>
-
 </html>
