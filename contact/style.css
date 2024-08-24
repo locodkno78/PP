@@ -7,10 +7,10 @@ body {
     padding: 0;
     /* Elimina cualquier padding predeterminado */
     display: flex;
-    align-items: center;
-    /* Centra verticalmente el contenido */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
+    /* Centra el contenedor horizontalmente */
+    align-items: center;
+    /* Centra el contenedor verticalmente */
     background-image: url('../img/Casa-Historica.jpg');
     background-size: cover;
     /* Ajusta la imagen para que cubra todo el fondo */
@@ -18,12 +18,18 @@ body {
     /* Evita que la imagen se repita */
     background-position: center;
     /* Centra la imagen de fondo */
+    background-attachment: fixed;
+    /* Hace que la imagen de fondo permanezca fija */    
+    overflow-x: hidden;
+    /* Evita el scroll horizontal */
 }
 
 /* Estilo del contenedor del formulario */
 .container {
-    background-color: #fff;
-    /* Fondo blanco para el formulario */
+    margin-top: 20%;
+    /* Reduce el margen superior */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo blanco semitransparente para el formulario */
     padding: 30px;
     /* Espaciado interno del formulario */
     border-radius: 8px;
@@ -31,12 +37,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra para efecto de elevación */
     text-align: center;
-    max-width: 400px;
-    /* Ancho máximo más razonable para el formulario */
-    width: 100%;
-    /* Hace que el contenedor se ajuste al ancho disponible hasta el máximo */
-    margin: 20px;
-    /* Añade un margen para separar el formulario del borde de la pantalla */
+    width: 90%;
+    /* El contenedor ocupa el 90% del ancho disponible */
+    max-width: 320px;
+    /* Ancho máximo del formulario */
+    margin-left: auto;
+    /* Centra horizontalmente el contenedor */
+    margin-right: auto;
+    /* Centra horizontalmente el contenedor */
 }
 
 .navbar {
@@ -55,9 +63,11 @@ body {
     color: #333;
     /* Color del texto de los labels */
     text-align: left;
-    /* Alinea los labels a la izquierda */
+    /* Alineación a la izquierda */
     display: block;
-    /* Hace que los labels ocupen toda la fila */
+    /* Hace que el label ocupe toda la línea */
+    margin-bottom: 5px;
+    /* Espacio debajo del label */
 }
 
 /* Estilo para los campos de entrada */
@@ -68,8 +78,10 @@ body {
     /* Bordes grises claros */
     padding: 10px;
     /* Espaciado interno */
+    width: 100%;
+    /* Asegura que los campos de entrada ocupen todo el ancho del contenedor */
     margin-bottom: 15px;
-    /* Espaciado inferior entre campos */
+    /* Espacio entre los campos de entrada */
 }
 
 /* Estilo del botón de envío */
@@ -88,6 +100,8 @@ body {
     /* Bordes redondeados del botón */
     transition: background-color 0.3s ease;
     /* Transición suave para cambios de color de fondo */
+    margin-top: 10px;
+    /* Espacio arriba del botón */
 }
 
 /* Efecto hover para el botón */
@@ -102,13 +116,38 @@ textarea.form-control {
     /* Impide que el usuario cambie el tamaño del área de texto */
 }
 
-/* Estilo de los mensajes de validación */
-.was-validated .form-control:invalid {
-    border-color: #dc3545;
-    /* Color de borde rojo para entradas inválidas */
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        /* Reduce el padding en pantallas más pequeñas */
+        margin-top: 10%;
+        /* Ajusta el margen superior */
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        /* Reduce el tamaño de la fuente del botón en pantallas más pequeñas */
+    }
 }
 
-.was-validated .form-control:valid {
-    border-color: #28a745;
-    /* Color de borde verde para entradas válidas */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        /* Reduce aún más el padding en pantallas muy pequeñas */
+        margin-top: 20%;
+        /* Ajusta el margen superior */
+    }
+
+    .form-control {
+        padding: 8px;
+        /* Ajusta el padding de los campos de entrada */
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        /* Ajusta el tamaño de fuente del botón */
+        padding: 8px;
+        /* Ajusta el padding del botón */
+    }
 }

@@ -1,5 +1,5 @@
 html, body {
-    height: 120%; /* Asegura que el body y html ocupen todo el alto de la ventana */
+    height: 100%; /* Asegura que el body y html ocupen todo el alto de la ventana */
     margin: 0; /* Elimina cualquier margen predeterminado */
     padding: 0; /* Elimina cualquier padding predeterminado */
     display: flex;
@@ -8,21 +8,117 @@ html, body {
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija */
+    width: 100%; /* Asegura que el ancho del body y html cubra todo el viewport */
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
-.container{
-    text-align: center;
-    flex: 1;
-}
-
+/* Estilo del navbar */
 .navbar {
-    height: 80px; /* Ajusta esta altura según lo que necesites */    
+    height: 80px; /* Ajusta esta altura según lo que necesites */
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
     font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
+    padding: 0 20px; /* Espacio interno a los lados */
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Posiciona el navbar en la parte superior */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 
+/* Contenedor principal */
+.container {
+    margin-top: 80px; /* Ajusta el margen superior para que las cards no se escondan detrás del navbar */
+    text-align: center;
+    flex: 1;
+    padding: 20px; /* Añade padding para dar espacio en los laterales */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se alineen en filas y columnas */
+    justify-content: center; /* Centra las cards horizontalmente */
+    align-items: flex-start; /* Alinea las cards al inicio verticalmente */
+    gap: 20px; /* Añade espacio entre las cards */
+}
+
+/* Estilo de las cards */
+.card {
+    width: 300px; /* Fija el ancho de las cards */
+    margin: 15px; /* Espacio entre las cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco de las cards */
+    flex: 1 1 auto; /* Permite que las cards se redimensionen de forma responsive */
+}
+
+/* Estilo de las imágenes de las cards */
 .card-img-top {
     height: 200px; /* Ajusta la altura según tus necesidades */
     object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
 }
+
+/* Estilo del footer */
+.footer {
+    height: 60px; /* Ajusta la altura del footer según tus necesidades */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del footer */
+    justify-content: center; /* Centra horizontalmente el contenido del footer */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Posiciona el footer en la parte inferior */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Reduce la altura del navbar en pantallas más pequeñas */
+        font-size: 20px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .footer {
+        height: 50px; /* Reduce la altura del footer en pantallas más pequeñas */
+        font-size: 18px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .card {
+        width: 250px; /* Ajusta el ancho de las cards en pantallas más pequeñas */
+    }
+
+    .card-img-top {
+        height: 150px; /* Ajusta la altura de las imágenes en pantallas más pequeñas */
+    }
+
+    .container {
+        padding: 10px; /* Reduce el padding en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 50px; /* Reduce aún más la altura del navbar en pantallas muy pequeñas */
+        font-size: 18px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .footer {
+        height: 40px; /* Reduce la altura del footer en pantallas muy pequeñas */
+        font-size: 16px; /* Reduce el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .card {
+        width: 200px; /* Ajusta el ancho de las cards en pantallas muy pequeñas */
+    }
+
+    .card-img-top {
+        height: 120px; /* Ajusta la altura de las imágenes en pantallas muy pequeñas */
+    }
+
+    .container {
+        padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+}
+
