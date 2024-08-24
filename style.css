@@ -72,6 +72,32 @@ html, body {
     bottom: 0; /* Posiciona el footer en la parte inferior */
     z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
 }
+.whatsapp-button {
+    position: fixed; /* Fija la posición en la pantalla */
+    bottom: 20px; /* Separa el botón 20px del borde inferior */
+    right: 25px; /* Separa el botón 20px del borde derecho */
+    background-color: #25D366; /* Color de fondo verde de WhatsApp */
+    color: white; /* Color del ícono */
+    border: none; /* Elimina el borde predeterminado del botón */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    display: flex; /* Utiliza flexbox para centrar el icono */
+    align-items: center; /* Centra verticalmente el icono dentro del botón */
+    justify-content: center; /* Centra horizontalmente el icono dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+}
+
+.whatsapp-button:hover {
+    background-color: #1e9e52; /* Cambia el color de fondo cuando el usuario pasa el mouse por encima */
+}
+
+.whatsapp-button i {
+    font-size: 35px; /* Ajusta el tamaño del ícono */
+}
+ 
 
 /* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
@@ -87,6 +113,7 @@ html, body {
 
     .card {
         width: 250px; /* Ajusta el ancho de las cards en pantallas más pequeñas */
+        margin: 12px; /* Espacio entre las cards */
     }
 
     .card-img-top {
@@ -95,6 +122,14 @@ html, body {
 
     .container {
         padding: 10px; /* Reduce el padding en pantallas más pequeñas */
+    }
+    .whatsapp-button {
+        width: 50px; /* Reduce el ancho del botón en pantallas más pequeñas */
+        height: 50px; /* Reduce el alto del botón en pantallas más pequeñas */
+    }
+
+    .whatsapp-button i {
+        font-size: 20px; /* Reduce el tamaño del ícono en pantallas más pequeñas */
     }
 }
 
@@ -111,6 +146,7 @@ html, body {
 
     .card {
         width: 200px; /* Ajusta el ancho de las cards en pantallas muy pequeñas */
+        margin: 10px; /* Espacio entre las cards */
     }
 
     .card-img-top {
@@ -119,6 +155,16 @@ html, body {
 
     .container {
         padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+    .whatsapp-button {
+        width: 40px; /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
+        height: 40px; /* Reduce aún más el alto del botón en pantallas muy pequeñas */
+        bottom: 15px; /* Ajusta la distancia desde el borde inferior en pantallas muy pequeñas */
+        right: 15px; /* Ajusta la distancia desde el borde derecho en pantallas muy pequeñas */
+    }
+
+    .whatsapp-button i {
+        font-size: 18px; /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
     }
 }
 
