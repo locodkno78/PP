@@ -27,7 +27,7 @@
     <div id="navbar-placeholder"></div>
     <div class="container">
       <h2>Formulario de Consulta</h2>
-      <form>
+      <form action="https://formsubmit.co/d589ad93650ef43212b3e7b73a9945fe" method="POST">
         <!-- Campo de Nombre -->
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre</label>
@@ -36,30 +36,7 @@
             class="form-control"
             id="nombre"
             placeholder="Ingrese su nombre"
-            required
-          />
-        </div>
-
-        <!-- Campo de Apellido -->
-        <div class="mb-3">
-          <label for="apellido" class="form-label">Apellido</label>
-          <input
-            type="text"
-            class="form-control"
-            id="apellido"
-            placeholder="Ingrese su apellido"
-            required
-          />
-        </div>
-
-        <!-- Campo de Teléfono -->
-        <div class="mb-3">
-          <label for="telefono" class="form-label">Teléfono</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="telefono"
-            placeholder="Ingrese su número de teléfono"
+            name="name"
             required
           />
         </div>
@@ -71,7 +48,20 @@
             type="email"
             class="form-control"
             id="email"
-            placeholder="Ingrese su email"
+            placeholder="Ingrese su Email"
+            name="email"
+            required
+          />
+        </div>
+
+        <!-- Campo de Asunto -->
+        <div class="mb-3">
+          <label for="subject" class="form-label">Asunto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="subject"
+            placeholder="Ingrese su número de teléfono"
             required
           />
         </div>
@@ -84,12 +74,17 @@
             id="consulta"
             rows="4"
             placeholder="Escriba su consulta aquí..."
+            name="consulta"
             required
           ></textarea>
         </div>
         <!-- Botón de Enviar -->
         <button type="submit" class="btn btn-light" data-bs-toggle="tooltip"
         title="Enviar consulta">Enviar</button>
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+        <input type="hidden" name="_captcha" value="false">
+
       </form>
     </div>
     
