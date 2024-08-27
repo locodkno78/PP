@@ -13,105 +13,73 @@ html, body {
     overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
-/* Estilo del contenedor del formulario */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body tenga al menos el alto de la ventana */
+}
+
 .container {
-    margin-top: 15%;
-    /* Reduce el margen superior */
-    margin-bottom: 5%;    
+    flex: 1; /* Hace que el contenedor ocupe el espacio restante */
+    margin-top: 10% !important; /* Ajusta el margen superior y usa !important para asegurar la aplicación */
+    margin-bottom: 5% !important;    
     text-align: center;
     color: white;
-    flex: 1;
-    background-color: rgba(44, 3, 110, 0.8);
-    /* Fondo blanco semitransparente para el formulario */
-    padding: 20px;
-    /* Espaciado interno del formulario */
-    border-radius: 8px;
-    /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para efecto de elevación */
-    width: 90%;
-    /* El contenedor ocupa el 90% del ancho disponible */
-    max-width: 320px;
-    /* Ancho máximo del formulario */
-    margin-left: auto;
-    /* Centra horizontalmente el contenedor */
-    margin-right: auto;
-    /* Centra horizontalmente el contenedor */
+    background-color: rgba(44, 3, 110, 0.8); /* Fondo semitransparente para el formulario */
+    padding: 15px; /* Reduce el espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+    width: 80% !important; /* Reduce el ancho del contenedor al 80% del disponible */
+    max-width: 350px !important; /* Ajusta el ancho máximo del formulario */
+    margin-left: auto; /* Centra horizontalmente el contenedor */
+    margin-right: auto; /* Centra horizontalmente el contenedor */
 }
 
+/* Estilo del navbar */
 .navbar {
-    height: 80px;
-    /* Ajusta esta altura según lo que necesites */
+    height: auto; /* Ajusta esta altura según lo que necesites */
     display: flex;
-    align-items: center;
-    /* Centra verticalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
     font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
+    padding: 0 20px; /* Espacio interno a los lados */
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Posiciona el navbar en la parte superior */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 
-/* Estilo para los labels */
-.form-label {
-    font-weight: bold;
-    /* Hace que el texto de los labels sea negrita */
-    color: #fafafa;
-    /* Color del texto de los labels */
-    text-align: left;
-    /* Alineación a la izquierda */
-    display: block;
-    /* Hace que el label ocupe toda la línea */
-    margin-bottom: 5px;
-    /* Espacio debajo del label */
-}
+
 
 /* Estilo para los campos de entrada */
 .form-control {
-    border-radius: 5px;
-    /* Bordes redondeados para los campos de entrada */
-    border: 1px solid #ddd;
-    /* Bordes grises claros */
-    padding: 10px;
-    /* Espaciado interno */
-    width: 100%;
-    /* Asegura que los campos de entrada ocupen todo el ancho del contenedor */
-    margin-bottom: 15px;
-    /* Espacio entre los campos de entrada */
-}
-
-/* Estilo del botón de envío */
-.btn-light {      
-    padding: 10px;
-    /* Espaciado interno del botón */
-    font-size: 16px;
-    /* Tamaño de fuente del texto del botón */
-    border-radius: 5px;
-    /* Bordes redondeados del botón */
-    transition: background-color 0.3s ease;
-    /* Transición suave para cambios de color de fondo */
-    margin-top: 10px;
-    /* Espacio arriba del botón */
+    width: 100% !important; /* Asegura que los campos de entrada ocupen todo el ancho del contenedor */
+    max-width: 100% !important; /* Ajusta el ancho máximo para que se limite al contenedor */
+    margin: 0 auto; /* Centra los campos de entrada */
 }
 
 /* Estilo del área de texto para la consulta */
 textarea.form-control {
-    resize: none;
-    /* Impide que el usuario cambie el tamaño del área de texto */
+    resize: none; /* Impide que el usuario cambie el tamaño del área de texto */
 }
 
 /* Estilo del footer */
-.footer {
-    height: 60px; /* Ajusta la altura del footer según tus necesidades */
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido del footer */
-    justify-content: center; /* Centra horizontalmente el contenido del footer */
+footer {
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
-    width: 100%; /* Asegura que el footer ocupe todo el ancho */
-    position: fixed; /* Fija el footer en la parte inferior */
-    bottom: 0; /* Posiciona el footer en la parte inferior */
-    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Asegura que el footer no se fije en la parte inferior */
+    bottom: 0; /* Posiciona el footer en la parte inferior del contenedor */
 }
+
+/* Botón de WhatsApp */
 .whatsapp-button {
-    position: fixed; /* Fija la posición en la pantalla */
-    bottom: 20px; /* Separa el botón 20px del borde inferior */
-    right: 25px; /* Separa el botón 20px del borde derecho */
+    position: fixed; /* Asegura que el botón esté fijo en la pantalla */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 25px; /* Distancia desde el borde derecho */
     background-color: #25D366; /* Color de fondo verde de WhatsApp */
     color: white; /* Color del ícono */
     border: none; /* Elimina el borde predeterminado del botón */
@@ -124,6 +92,7 @@ textarea.form-control {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
     cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
     transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
 }
 
 .whatsapp-button:hover {
@@ -141,15 +110,15 @@ textarea.form-control {
         font-size: 20px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
     }
 
-    .footer {
+    footer {
         height: 50px; /* Reduce la altura del footer en pantallas más pequeñas */
         font-size: 18px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
-        position: fixed; /* Fija el footer en la parte inferior */
-    }    
+    }
 
     .container {
         padding: 10px; /* Reduce el padding en pantallas más pequeñas */
     }
+    
     .whatsapp-button {
         width: 50px; /* Reduce el ancho del botón en pantallas más pequeñas */
         height: 50px; /* Reduce el alto del botón en pantallas más pequeñas */
@@ -166,15 +135,15 @@ textarea.form-control {
         font-size: 18px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
     }
 
-    .footer {
+    footer {
         height: 40px; /* Reduce la altura del footer en pantallas muy pequeñas */
         font-size: 16px; /* Reduce el tamaño de fuente en pantallas muy pequeñas */
-        position: fixed; /* Fija el footer en la parte inferior */
     }
 
     .container {
         padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
     }
+
     .whatsapp-button {
         width: 40px; /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
         height: 40px; /* Reduce aún más el alto del botón en pantallas muy pequeñas */
@@ -186,4 +155,3 @@ textarea.form-control {
         font-size: 18px; /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
     }
 }
-

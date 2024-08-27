@@ -15,7 +15,7 @@ html, body {
 
 /* Estilo del navbar */
 .navbar {
-    height: 80px; /* Ajusta esta altura según lo que necesites */
+    height: auto; /* Ajusta esta altura según lo que necesites */
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */

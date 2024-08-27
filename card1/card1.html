@@ -11,14 +11,76 @@
     crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
   <title>Card1</title>
 </head>
 
 <body>
   <div id="navbar-placeholder"></div>
   <div class="container">
-    <h1>Card 1</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/card1/casa-gobierno.jpg" class="d-block w-100" alt="casa-gobierno">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/card1/bicentenario.jpg" class="d-block w-100" alt="monumento">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/card1/catedral.jpg" class="d-block w-100" alt="catedral">
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <p>San Miguel de Tucumán, a veces llamada simplemente Tucumán, es la capital de la provincia de Tucumán, situada
+        en el noroeste de la República Argentina, a 1311 km de la ciudad de Buenos Aires. Está ubicada muy cerca de la
+        orilla derecha del río Salí, también llamado río Dulce. El Jardín de la República y Cuna de la Independencia
+        Argentina, son sus apodos más conocidos. Es conocida como la Capital del Norte, por ser la ciudad más
+        desarrollada y poblada de esta región.
+
+        Es la quinta mayor ciudad de Argentina, después de Buenos Aires, Córdoba, Rosario, y Mendoza. Es además la
+        ciudad más importante de la región del Norte Grande Argentino. Su crecimiento ha superado los límites
+        originales, llevándola a ocupar territorios de los departamentos circundantes en todas las direcciones, dando
+        así origen a la conurbación del Gran San Miguel de Tucumán, la cual se sitúa, conforme al censo del año 2010,
+        como la quinta urbe de mayor tamaño del país.
+
+        Su importancia histórica se debe, principalmente, a que fue en esta ciudad donde se produjo la Declaración de
+        Independencia de la Argentina, el día 9 de julio de 1816. Es por eso que, desde el año 1991, por decreto n.º 81
+        del Poder Ejecutivo Nacional, los días 8 y 9 de julio de cada año, la ciudad de San Miguel de Tucumán se
+        convierte simbólicamente en la capital del país.</p>
+    </div>
   </div>
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/5493812133639" target="_blank" class="whatsapp-button" data-bs-toggle="tooltip"
+    title="Ir a WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div>
+      <ul class="list-inline">
+        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Instagram">
+          <a href="https://www.instagram.com/tucumanturismo" class="text-white me-3" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Facebook">
+          <a href="https://www.facebook.com/tucumanturismo" class="text-white me-3" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item" data-bs-toggle="tooltip" title="Enviar email">
+          <a href="mailto:informes@tucumanturismo.gob.ar" class="text-white me-3">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        &copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
   <script src="../index.js"></script>
 </body>
 
