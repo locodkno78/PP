@@ -34,11 +34,9 @@ html, body {
     text-align: center;
     flex: 1;
     padding: 20px; /* Añade padding para dar espacio en los laterales */
-    display: flex;
-    flex-wrap: wrap; /* Permite que las cards se alineen en filas y columnas */
-    justify-content: center; /* Centra las cards horizontalmente */
-    align-items: flex-start; /* Alinea las cards al inicio verticalmente */
-    gap: 20px; /* Añade espacio entre las cards */
+    display: flex;    
+    
+    
 }
 
 /* Estilo de las cards */
