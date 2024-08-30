@@ -32,6 +32,10 @@ html, body {
     padding: 5%;
 }
 
+.modal-body{
+    text-align: left;
+}
+
 /* Estilo del footer */
 .footer {
     height: 60px; /* Ajusta la altura del footer según tus necesidades */
