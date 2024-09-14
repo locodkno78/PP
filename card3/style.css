@@ -13,6 +13,11 @@ html, body {
     font-size: 25px;
 }
 
+.logo{
+    height: 60px;
+    width: 80px;
+}
+
 .container {
     text-align: center;
     flex: 1;
