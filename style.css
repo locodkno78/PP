@@ -28,6 +28,10 @@ html, body {
     z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 
+.logo{
+    height: 60px;
+    width: 80px;
+}
 /* Contenedor principal */
 .container {
     margin-top: 80px; /* Ajusta el margen superior para que las cards no se escondan detrás del navbar */

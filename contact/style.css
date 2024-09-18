@@ -50,6 +50,10 @@ body {
     z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 
+.logo{
+    height: 60px;
+    width: 80px;
+}
 
 
 /* Estilo para los campos de entrada */
