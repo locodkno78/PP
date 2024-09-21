@@ -25,6 +25,11 @@ html, body {
     font-size: 25px;
 }
 
+.logo{
+    height: 60px;
+    width: 80px;
+}
+
 img{
     border-color: black;
     border-style: double;
