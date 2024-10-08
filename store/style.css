@@ -32,6 +32,25 @@ html, body {
     text-align: justify;
 }
 
+/* Estilo de las cards */
+.card {
+    width: 400px; /* Fija el ancho de las cards */
+    margin: 15px; /* Espacio entre las cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco de las cards */
+    flex: 1 1 auto; /* Permite que las cards se redimensionen de forma responsive */
+}
+
+/* Estilo de las imágenes de las cards */
+.card-img-top {
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+}
+
 /* Estilo del footer */
 .footer {
     height: 60px; /* Ajusta la altura del footer según tus necesidades */
@@ -68,4 +87,73 @@ html, body {
 
 .whatsapp-button i {
     font-size: 35px; /* Ajusta el tamaño del ícono */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Reduce la altura del navbar en pantallas más pequeñas */
+        font-size: 20px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .footer {
+        height: 50px; /* Reduce la altura del footer en pantallas más pequeñas */
+        font-size: 18px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .card {
+        width: 250px; /* Ajusta el ancho de las cards en pantallas más pequeñas */
+        margin: 12px; /* Espacio entre las cards */
+    }
+
+    .card-img-top {
+        height: 150px; /* Ajusta la altura de las imágenes en pantallas más pequeñas */
+    }
+
+    .container {
+        padding: 10px; /* Reduce el padding en pantallas más pequeñas */
+    }
+    .whatsapp-button {
+        width: 50px; /* Reduce el ancho del botón en pantallas más pequeñas */
+        height: 50px; /* Reduce el alto del botón en pantallas más pequeñas */
+    }
+
+    .whatsapp-button i {
+        font-size: 20px; /* Reduce el tamaño del ícono en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 50px; /* Reduce aún más la altura del navbar en pantallas muy pequeñas */
+        font-size: 18px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .footer {
+        height: 40px; /* Reduce la altura del footer en pantallas muy pequeñas */
+        font-size: 16px; /* Reduce el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .card {
+        width: 200px; /* Ajusta el ancho de las cards en pantallas muy pequeñas */
+        margin: 10px; /* Espacio entre las cards */
+    }
+
+    .card-img-top {
+        height: 120px; /* Ajusta la altura de las imágenes en pantallas muy pequeñas */
+    }
+
+    .container {
+        padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+    .whatsapp-button {
+        width: 40px; /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
+        height: 40px; /* Reduce aún más el alto del botón en pantallas muy pequeñas */
+        bottom: 15px; /* Ajusta la distancia desde el borde inferior en pantallas muy pequeñas */
+        right: 15px; /* Ajusta la distancia desde el borde derecho en pantallas muy pequeñas */
+    }
+
+    .whatsapp-button i {
+        font-size: 18px; /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
+    }
 }
