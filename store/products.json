@@ -2,7 +2,7 @@
     {
       "id": 1,
       "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/sombrero.webp?alt=media&token=1c37081d-4ff1-4d30-8987-f4eeab8cb6ce",
-      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/TITULA%20DORSO.CTG.jpg?alt=media&token=f1177fc3-ef84-4aa6-82e5-349aebc46aee",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/sombrero1.webp?alt=media&token=a8e9d116-d1f3-44a3-8243-c7ffed6fc5c7",
       "nombre": "Sombrero de Gaucho",
       "precio": 15500,
       "talle": "S M L XL",
@@ -10,36 +10,36 @@
     },
     {
       "id": 2,
-      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/cintos.jpg?alt=media&token=a59dd4fa-b289-4a7c-98df-1379ece1d446",
-      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/SUPLENTE%20ESPALDA.CTG.jpg?alt=media&token=3a976f32-0a1a-49f1-92aa-47f463528681",
-      "nombre": "Tuc y Gim. - Camiseta Suplente",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/cintos.jpg?alt=media&token=260fd197-ace9-4afe-bd79-ca41c295593a",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/cintos1.jpg?alt=media&token=0edc2a23-b9f9-42a3-b869-7c74967145ad",
+      "nombre": "Cintos de cuero",
       "precio": 14500,
       "talle": "S M L XL XXL",
       "stock": "Disponible"
     },
     {
       "id": 3,
-      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/mate.jpg?alt=media&token=de175723-f7bc-465a-bf4a-a5d6fa22b19b",
-      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/AZUL%20FRANCIA%20DORSO.%20CTG.jpg?alt=media&token=a7b905f5-5c95-49f6-8648-c9ac44d8d647",
-      "nombre": "Tuc y Gim. - Camiseta Entrenamiento Azul",
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/mate.jpg?alt=media&token=6f689779-d2d2-43db-a245-113b1e3a984d",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/mate1.webp?alt=media&token=a37e352a-6e3b-4766-bce7-fd7844464ff8",
+      "nombre": "Mate de alpaca forrado",
       "precio": 14000,
-      "talle": "S M L XL XXL",
+      "talle": "M L",
       "stock": "Disponible"
     },
     {
       "id": 4,
       "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/quesillo.jpg?alt=media&token=d8207c8a-114c-4f1e-ba33-d55a0d9d74c0",
-      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/CELESTE%20DORSO.CTG.jpg?alt=media&token=04def4e0-d61e-42bd-9448-e8a6832ec509",
-      "nombre": "Tuc y Gim. - Camiseta Entrenamiento Celeste",
-      "precio": 14000,
-      "talle": "S M L XL XXL",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/quesillo1.jpg?alt=media&token=4a42f072-afa9-4b9f-a2b3-c5d2a1366102",
+      "nombre": "Quesillo de cabra",
+      "precio": 2000,
+      "talle": " M L ",
       "stock": "Disponible"
     },   
     {
         "id": 5,
         "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/poncho.jpeg?alt=media&token=3ebd9f8a-f688-4ba1-9edd-f744abfe440f",
-        "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/CELESTE%20DORSO.CTG.jpg?alt=media&token=04def4e0-d61e-42bd-9448-e8a6832ec509",
-        "nombre": "Tuc y Gim. - Camiseta Entrenamiento Celeste",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/poncho1.webp?alt=media&token=08413515-56fb-4d23-a407-4d81b29132bb",
+        "nombre": "Poncho de Gaucho",
         "precio": 14000,
         "talle": "S M L XL XXL",
         "stock": "Disponible"
@@ -47,10 +47,28 @@
       {
         "id": 6,
         "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/bombilla.webp?alt=media&token=96e7e29a-eecb-4da4-8720-18bb7d1f4b07",
-        "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/CELESTE%20DORSO.CTG.jpg?alt=media&token=04def4e0-d61e-42bd-9448-e8a6832ec509",
-        "nombre": "Tuc y Gim. - Camiseta Entrenamiento Celeste",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/bombilla1.jpg?alt=media&token=03652414-674b-4429-ac3d-ffd4dbd8b2de",
+        "nombre": "Bombillas para mate",
+        "precio": 14000,
+        "talle": "M L",
+        "stock": "Disponible"
+      },
+      {
+        "id": 7,
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/alfajorTucu.jpg?alt=media&token=c29dc894-b63a-4593-a39d-18ac66d8091e",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/alfajorTucu1.jpg?alt=media&token=10b8efa2-bf54-48d7-b29f-e61a2c9c163b",
+        "nombre": "Alfajor Tucumano",
         "precio": 14000,
         "talle": "S M L XL XXL",
         "stock": "Disponible"
-      }         
+      },
+      {
+        "id": 8,
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/alfe%C3%B1ique.jpg?alt=media&token=2da71ded-6142-4376-9d9e-13554c321796",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/alfe%C3%B1ique1.png?alt=media&token=5c77eb86-d883-4248-9297-ae9c0fd95bc8",
+        "nombre": "Alfeñiques",
+        "precio": 14000,
+        "talle": "M L",
+        "stock": "Disponible"
+      }              
 ]
