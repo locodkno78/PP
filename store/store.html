@@ -13,116 +13,21 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+  <script type="module" src="../cart/cart.js"></script>
+  <script type="module" src="../firebase.js"></script>
+  <script type="module" defer src="./store.js"></script>
   <title>Store</title>
 </head>
 
 <body>
   <div id="navbar-placeholder"></div>
   <div class="container">
-    <div class="row justify-content-center align-items-center min-vh-100">
-      <!-- Tarjeta 1 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-image-src="../img/store/sombrero.webp">
-          <div class="card text-bg-dark">
-            <div class="card-header">Sombrero de Gaucho</div>
-            <div class="card-body">
-              <img src="../img/store/sombrero.webp" class="card-img-top" alt="sombrero" data-bs-toggle="tooltip"
-                title="Click para ver" />
-              <h5 class="card-title">Sombrero de Gaucho</h5>
-              <p class="card-text">
-                Sombrero de gaucho de cuero con cinta decorativa color gris.
-              </p>
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip"
-                title="Click para comprar">Comprar</button>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Tarjeta 2 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-image-src="../img/store/poncho.jpeg">
-          <div class="card text-bg-dark">
-            <div class="card-header">Poncho Tucumano</div>
-            <div class="card-body">
-              <img src="../img/store/poncho.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
-                title="Click para ver" />
-              <h5 class="card-title">Poncho Tucumano</h5>
-              <p class="card-text">
-                Poncho tucumano típico de la provincia de hilo de llama.
-              </p>
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip"
-                title="Click para comprar">Comprar</button>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Tarjeta 3 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-image-src="../img/store/mate.jpg">
-          <div class="card text-bg-dark">
-            <div class="card-header">Mate</div>
-            <div class="card-body">
-              <img src="../img/store/mate.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
-                title="Click para ver" />
-              <h5 class="card-title">Mate</h5>
-              <p class="card-text">
-                Mate de calabaza enchapado con alpaca y forrado en cuero
-              </p>
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip"
-                title="Click para comprar">Comprar</button>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Tarjeta 4 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-image-src="../img/store/cintos.jpg">
-          <div class="card text-bg-dark">
-            <div class="card-header">Cinto</div>
-            <div class="card-body">
-              <img src="../img/store/cintos.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
-                title="Click para ver" />
-              <h5 class="card-title">Cinto</h5>
-              <p class="card-text">
-                Cinturón de cuero de vaca color marrón en varias medidas.
-              </p>
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip"
-                title="Click para comprar">Comprar</button>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Tarjeta 5 -->
-      <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center">
-        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#imageModal"
-          data-bs-image-src="../img/store/quesillo.jpg">
-          <div class="card text-bg-dark">
-            <div class="card-header">Quesillo</div>
-            <div class="card-body">
-              <img src="../img/store/quesillo.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
-                title="Click para ver" />
-              <h5 class="card-title">Quesillo</h5>
-              <p class="card-text">
-                Queso de Tafí del Valle elaborado con leche de cabra.
-              </p>
-              <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip"
-                title="Click para comprar">Comprar</button>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5493812133639" target="_blank" class="whatsapp-button" data-bs-toggle="tooltip"
+      title="Ir a WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
   </div>
-  <!-- Botón de WhatsApp -->
-  <a href="https://wa.me/5493812133639" target="_blank" class="whatsapp-button" data-bs-toggle="tooltip"
-    title="Ir a WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
   <footer class="bg-dark text-white text-center py-4">
     <div>
       <ul class="list-inline">

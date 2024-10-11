@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/sombrero.webp?alt=media&token=1c37081d-4ff1-4d30-8987-f4eeab8cb6ce",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/TITULA%20DORSO.CTG.jpg?alt=media&token=f1177fc3-ef84-4aa6-82e5-349aebc46aee",
+      "nombre": "Sombrero de Gaucho",
+      "precio": 15500,
+      "talle": "S M L XL",
+      "stock": "Disponible"
+    },
+    {
+      "id": 2,
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/cintos.jpg?alt=media&token=a59dd4fa-b289-4a7c-98df-1379ece1d446",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/SUPLENTE%20ESPALDA.CTG.jpg?alt=media&token=3a976f32-0a1a-49f1-92aa-47f463528681",
+      "nombre": "Tuc y Gim. - Camiseta Suplente",
+      "precio": 14500,
+      "talle": "S M L XL XXL",
+      "stock": "Disponible"
+    },
+    {
+      "id": 3,
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/mate.jpg?alt=media&token=de175723-f7bc-465a-bf4a-a5d6fa22b19b",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/AZUL%20FRANCIA%20DORSO.%20CTG.jpg?alt=media&token=a7b905f5-5c95-49f6-8648-c9ac44d8d647",
+      "nombre": "Tuc y Gim. - Camiseta Entrenamiento Azul",
+      "precio": 14000,
+      "talle": "S M L XL XXL",
+      "stock": "Disponible"
+    },
+    {
+      "id": 4,
+      "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/quesillo.jpg?alt=media&token=d8207c8a-114c-4f1e-ba33-d55a0d9d74c0",
+      "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/CELESTE%20DORSO.CTG.jpg?alt=media&token=04def4e0-d61e-42bd-9448-e8a6832ec509",
+      "nombre": "Tuc y Gim. - Camiseta Entrenamiento Celeste",
+      "precio": 14000,
+      "talle": "S M L XL XXL",
+      "stock": "Disponible"
+    },   
+    {
+        "id": 5,
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/poncho.jpeg?alt=media&token=3ebd9f8a-f688-4ba1-9edd-f744abfe440f",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/CELESTE%20DORSO.CTG.jpg?alt=media&token=04def4e0-d61e-42bd-9448-e8a6832ec509",
+        "nombre": "Tuc y Gim. - Camiseta Entrenamiento Celeste",
+        "precio": 14000,
+        "talle": "S M L XL XXL",
+        "stock": "Disponible"
+      },
+      {
+        "id": 6,
+        "imagen": "https://firebasestorage.googleapis.com/v0/b/todo-ae63a.appspot.com/o/bombilla.webp?alt=media&token=96e7e29a-eecb-4da4-8720-18bb7d1f4b07",
+        "imagen2":"https://firebasestorage.googleapis.com/v0/b/base-de-datos-4c1cd.appspot.com/o/CELESTE%20DORSO.CTG.jpg?alt=media&token=04def4e0-d61e-42bd-9448-e8a6832ec509",
+        "nombre": "Tuc y Gim. - Camiseta Entrenamiento Celeste",
+        "precio": 14000,
+        "talle": "S M L XL XXL",
+        "stock": "Disponible"
+      }         
+]
