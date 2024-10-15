@@ -38,9 +38,7 @@ html, body {
     text-align: center;
     flex: 1;
     padding: 20px; /* Añade padding para dar espacio en los laterales */
-    display: flex;    
-    
-    
+    display: flex;
 }
 
 /* Estilo de las cards */
