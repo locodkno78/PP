@@ -92,6 +92,45 @@ html, body {
     margin-left: 25%;
   }
 
+  .table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table .nombre {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.table .precio, .table .subtotal {
+    font-weight: bold;
+}
+
+.table .cantidad-input {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.total-row {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.btn.eliminar-pedido {
+    padding: 5px 10px;
+}
+
+.icono-trash {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+tfoot tr {
+    background-color: #e9ecef;
+}
+
+
 /* Estilo del footer */
 .footer {
     height: 60px;

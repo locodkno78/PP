@@ -19,7 +19,6 @@ function retornarCard(producto) {
         <div class="card-body text-white">
             <div class="card-name">${producto.nombre}</div>
             <div class="card-price">$${producto.precio}</div>
-            <div class="card-stock">Talles: ${producto.talle}</div>
             <div class="card-stock">Stock: ${producto.stock}</div>
             <div class="card-button d-grid gap-2">
               <button class="btn text-white btn-lg" data-id="${producto.id}" title="Clic para agregar al carrito" ${producto.stock === 0 ? 'disabled' : ''}>Pedir<i class="bi bi-cart"></i></button>
