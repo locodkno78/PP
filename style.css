@@ -1,170 +1,192 @@
+/* General settings */
 html, body {
-    height: 100%; /* Asegura que el body y html ocupen todo el alto de la ventana */
-    margin: 0; /* Elimina cualquier margen predeterminado */
-    padding: 0; /* Elimina cualquier padding predeterminado */
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     background-image: url('./img/Casa-Historica.jpg');
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen de fondo */
-    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija */
-    width: 100%; /* Asegura que el ancho del body y html cubra todo el viewport */
-    overflow-x: hidden; /* Evita el scroll horizontal */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-/* Estilo del navbar */
+/* Navbar */
 .navbar {
-    height: auto; /* Ajusta esta altura según lo que necesites */
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
-    padding: 0 20px; /* Espacio interno a los lados */
-    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
-    position: fixed; /* Fija el navbar en la parte superior */
-    top: 0; /* Posiciona el navbar en la parte superior */
-    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+    align-items: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
-.logo{
-    height: 60px;
-    width: 80px;
-}
-/* Contenedor principal */
-.container {
-    margin-top: 80px; /* Ajusta el margen superior para que las cards no se escondan detrás del navbar */
-    text-align: center;
-    flex: 1;
-    padding: 20px; /* Añade padding para dar espacio en los laterales */
-    display: flex;
+.navbar-brand .logo {
+    max-width: 80px;
+    height: auto;
 }
 
-/* Estilo de las cards */
-.card {
-    width: 300px; /* Fija el ancho de las cards */
-    margin: 15px; /* Espacio entre las cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: white; /* Fondo blanco de las cards */
-    flex: 1 1 auto; /* Permite que las cards se redimensionen de forma responsive */
+.nav-link {
+    margin: 0 10px;
+    font-size: 16px;
 }
 
-/* Estilo de las imágenes de las cards */
-.card-img-top {
-    height: 200px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
-    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
+.navbar-toggler {
+    border: none;
 }
 
-/* Estilo del footer */
+/* Footer */
 .footer {
-    height: 60px; /* Ajusta la altura del footer según tus necesidades */
+    height: 50px;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido del footer */
-    justify-content: center; /* Centra horizontalmente el contenido del footer */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
-    width: 100%; /* Asegura que el footer ocupe todo el ancho */
-    position: fixed; /* Fija el footer en la parte inferior */
-    bottom: 0; /* Posiciona el footer en la parte inferior */
-    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
 }
+
+/* Cards */
+.card {
+    flex: 1;
+    margin: 20px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 25px;
+}
+
+/* WhatsApp Button */
 .whatsapp-button {
-    position: fixed; /* Fija la posición en la pantalla */
-    bottom: 20px; /* Separa el botón 20px del borde inferior */
-    right: 25px; /* Separa el botón 20px del borde derecho */
-    background-color: #25D366; /* Color de fondo verde de WhatsApp */
-    color: white; /* Color del ícono */
-    border: none; /* Elimina el borde predeterminado del botón */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    width: 60px; /* Ancho del botón */
-    height: 60px; /* Alto del botón */
-    display: flex; /* Utiliza flexbox para centrar el icono */
-    align-items: center; /* Centra verticalmente el icono dentro del botón */
-    justify-content: center; /* Centra horizontalmente el icono dentro del botón */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .whatsapp-button:hover {
-    background-color: #1e9e52; /* Cambia el color de fondo cuando el usuario pasa el mouse por encima */
+    background-color: #1e9e52;
 }
 
 .whatsapp-button i {
-    font-size: 35px; /* Ajusta el tamaño del ícono */
+    font-size: 35px;
 }
- 
 
-/* Media queries para diferentes tamaños de pantalla */
+/* Media Queries */
 @media (max-width: 768px) {
     .navbar {
-        height: 60px; /* Reduce la altura del navbar en pantallas más pequeñas */
-        font-size: 20px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+        font-size: 14px;
     }
 
-    .footer {
-        height: 50px; /* Reduce la altura del footer en pantallas más pequeñas */
-        font-size: 18px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    .nav-link {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .logo {
+        max-width: 70px;
     }
 
     .card {
-        width: 250px; /* Ajusta el ancho de las cards en pantallas más pequeñas */
-        margin: 12px; /* Espacio entre las cards */
+        margin-top: 10%;
+        max-width: 200px;
     }
 
     .card-img-top {
-        height: 150px; /* Ajusta la altura de las imágenes en pantallas más pequeñas */
+        height: 150px;
     }
 
-    .container {
-        padding: 10px; /* Reduce el padding en pantallas más pequeñas */
+    .card-title {
+        font-size: 16px;
     }
+
+    .card-text {
+        font-size: 12px;
+    }
+
     .whatsapp-button {
-        width: 50px; /* Reduce el ancho del botón en pantallas más pequeñas */
-        height: 50px; /* Reduce el alto del botón en pantallas más pequeñas */
+        width: 40px;
+        height: 40px;
     }
 
     .whatsapp-button i {
-        font-size: 20px; /* Reduce el tamaño del ícono en pantallas más pequeñas */
+        font-size: 18px;
     }
 }
 
 @media (max-width: 480px) {
     .navbar {
-        height: 50px; /* Reduce aún más la altura del navbar en pantallas muy pequeñas */
-        font-size: 18px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+        font-size: 12px;
     }
 
-    .footer {
-        height: 40px; /* Reduce la altura del footer en pantallas muy pequeñas */
-        font-size: 16px; /* Reduce el tamaño de fuente en pantallas muy pequeñas */
+    .nav-link {
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    .logo {
+        max-width: 40px !important;
     }
 
     .card {
-        width: 200px; /* Ajusta el ancho de las cards en pantallas muy pequeñas */
-        margin: 10px; /* Espacio entre las cards */
+        margin-top: 10%;
+        max-width: 180px;
     }
 
     .card-img-top {
-        height: 120px; /* Ajusta la altura de las imágenes en pantallas muy pequeñas */
+        height: 120px;
     }
 
-    .container {
-        padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
+    .card-title {
+        font-size: 14px;
     }
+
+    .card-text {
+        font-size: 10px;
+    }
+
     .whatsapp-button {
-        width: 40px; /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
-        height: 40px; /* Reduce aún más el alto del botón en pantallas muy pequeñas */
-        bottom: 15px; /* Ajusta la distancia desde el borde inferior en pantallas muy pequeñas */
-        right: 15px; /* Ajusta la distancia desde el borde derecho en pantallas muy pequeñas */
+        width: 30px;
+        height: 30px;
     }
 
     .whatsapp-button i {
-        font-size: 18px; /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
+        font-size: 16px;
     }
 }
-
