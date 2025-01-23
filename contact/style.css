@@ -37,22 +37,30 @@ body {
 
 /* Estilo del navbar */
 .navbar {
-    height: auto; /* Ajusta esta altura según lo que necesites */
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
-    padding: 0 20px; /* Espacio interno a los lados */
-    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
-    position: fixed; /* Fija el navbar en la parte superior */
-    top: 0; /* Posiciona el navbar en la parte superior */
-    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+    align-items: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
-.logo{
-    height: 60px;
-    width: 80px;
+.navbar-brand .logo {
+    max-width: 80px;
+    height: auto;
+}
+
+.nav-link {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 
@@ -69,36 +77,57 @@ textarea.form-control {
 }
 
 /* Estilo del footer */
-footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
-    color: #333;
-    text-align: center;
-    padding: 20px;
+.footer {
+    height: 50px;
+    /* Ajusta la altura del footer según tus necesidades */
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el contenido del footer */
+    justify-content: center;
+    /* Centra horizontalmente el contenido del footer */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo blanco semitransparente para mejor legibilidad */
     width: 100%;
-    position: relative; /* Asegura que el footer no se fije en la parte inferior */
-    bottom: 0; /* Posiciona el footer en la parte inferior del contenedor */
+    /* Asegura que el footer ocupe todo el ancho */
+    position: fixed;
+    /* Fija el footer en la parte inferior */
+    bottom: 0;
+    /* Posiciona el footer en la parte inferior */
+    z-index: 1000;
+    /* Asegura que el footer esté por encima de otros elementos */
 }
 
-/* Botón de WhatsApp */
+/* WhatsApp Button */
 .whatsapp-button {
-    position: fixed; /* Asegura que el botón esté fijo en la pantalla */
-    bottom: 20px; /* Distancia desde el borde inferior */
-    right: 25px; /* Distancia desde el borde derecho */
-    background-color: #25D366; /* Color de fondo verde de WhatsApp */
-    color: white; /* Color del ícono */
-    border: none; /* Elimina el borde predeterminado del botón */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    width: 60px; /* Ancho del botón */
-    height: 60px; /* Alto del botón */
-    display: flex; /* Utiliza flexbox para centrar el icono */
-    align-items: center; /* Centra verticalmente el icono dentro del botón */
-    justify-content: center; /* Centra horizontalmente el icono dentro del botón */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
-    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+    position: fixed;
+    /* Fija la posición en la pantalla */
+    bottom: 30px;
+    /* Separa el botón 20px del borde inferior */
+    right: 35px;
+    /* Separa el botón 20px del borde derecho */
+    background-color: #25D366;
+    /* Color de fondo verde de WhatsApp */
+    color: white;
+    /* Color del ícono */
+    border: none;
+    /* Elimina el borde predeterminado del botón */
+    border-radius: 50%;
+    /* Hace que el botón sea circular */
+    width: 60px;
+    /* Ancho del botón */
+    height: 60px;
+    /* Alto del botón */
+    display: flex;
+    /* Utiliza flexbox para centrar el icono */
+    align-items: center;
+    /* Centra verticalmente el icono dentro del botón */
+    justify-content: center;
+    /* Centra horizontalmente el icono dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Añade una sombra */
+    cursor: pointer;
+    /* Cambia el cursor a un puntero al pasar sobre el botón */
 }
-
 .whatsapp-button:hover {
     background-color: #1e9e52; /* Cambia el color de fondo cuando el usuario pasa el mouse por encima */
 }
@@ -109,53 +138,60 @@ footer {
 
 /* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 768px) {
-    .navbar {
-        height: 60px; /* Reduce la altura del navbar en pantallas más pequeñas */
+    .navbar {       
         font-size: 20px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
     }
 
-    footer {
+    .nav-link {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .logo {
+        max-width: 70px;
+    }
+
+    .footer {
         height: 50px; /* Reduce la altura del footer en pantallas más pequeñas */
         font-size: 18px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
     }
 
     .container {
         padding: 10px; /* Reduce el padding en pantallas más pequeñas */
+        margin-top: 30%;
     }
     
     .whatsapp-button {
-        width: 50px; /* Reduce el ancho del botón en pantallas más pequeñas */
-        height: 50px; /* Reduce el alto del botón en pantallas más pequeñas */
+        width: 40px; /* Reduce el ancho del botón en pantallas más pequeñas */
+        height: 40px; /* Reduce el alto del botón en pantallas más pequeñas */
     }
 
     .whatsapp-button i {
-        font-size: 20px; /* Reduce el tamaño del ícono en pantallas más pequeñas */
+        font-size: 18px; /* Reduce el tamaño del ícono en pantallas más pequeñas */
     }
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        height: 50px; /* Reduce aún más la altura del navbar en pantallas muy pequeñas */
-        font-size: 18px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    .navbar {        
+        font-size: 12px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
     }
 
-    footer {
+    .footer {
         height: 40px; /* Reduce la altura del footer en pantallas muy pequeñas */
         font-size: 16px; /* Reduce el tamaño de fuente en pantallas muy pequeñas */
     }
 
     .container {
         padding: 5px; /* Reduce aún más el padding en pantallas muy pequeñas */
+        margin-top: 30%;
     }
 
     .whatsapp-button {
-        width: 40px; /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
-        height: 40px; /* Reduce aún más el alto del botón en pantallas muy pequeñas */
-        bottom: 15px; /* Ajusta la distancia desde el borde inferior en pantallas muy pequeñas */
-        right: 15px; /* Ajusta la distancia desde el borde derecho en pantallas muy pequeñas */
+        width: 30px; /* Reduce aún más el ancho del botón en pantallas muy pequeñas */
+        height: 30px; /* Reduce aún más el alto del botón en pantallas muy pequeñas */       
     }
 
     .whatsapp-button i {
-        font-size: 18px; /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
+        font-size: 16px; /* Reduce aún más el tamaño del ícono en pantallas muy pequeñas */
     }
 }

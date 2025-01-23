@@ -20,70 +20,74 @@
 
 <body>
     <div id="navbar-placeholder"></div>
-    <main>
-        <section>
+
     <div class="container">
         <div class="table-responsive">
             <!-- Cambié el id al tbody -->
-            <table class="table table-hover table-bordered border-primary">
+            <table class="table table-hover table-bordered table-striped table-sm border-primary">
                 <thead>
-                   
+
                 </thead>
                 <tbody id="tbody">
                     <!-- Las filas se cargarán aquí dinámicamente -->
                 </tbody>
-            </table>            
-        </div>        
+            </table>
+        </div>
     </div>
-</section>
+
     <div class="centrar-div">
         <div id="formulario" class="table table-hover table-bordered border-primary">
             <thead>
-                   
+
                 <h2 id="titulo">Ingrese sus datos</h2>
             </thead>
             <hr>
             <form id="signup-form">
                 <label for="name"><strong> Nombre: </strong></label>
-                <input type="text" id="name" class="form-control mb-3 required" placeholder="Ingrese su nombre" required />
+                <input type="text" id="name" class="form-control mb-3 required" placeholder="Ingrese su nombre"
+                    required />
                 <label for="surname"><strong> Apellido: </strong></label>
-                <input type="text" id="surname" class="form-control mb-3 required" placeholder="Ingrese su apellido" required />
+                <input type="text" id="surname" class="form-control mb-3 required" placeholder="Ingrese su apellido"
+                    required />
                 <label for="email"><strong> Email: </strong></label>
-                <input type="email" id="signup-email" class="form-control mb-3 required" placeholder="Ingrese un mail" required />
+                <input type="email" id="signup-email" class="form-control mb-3 required" placeholder="Ingrese un mail"
+                    required />
                 <label for="phone"><strong>Teléfono: </strong></label>
-                <input type="tel" id="phone" class="form-control mb-3 required" placeholder="Ingrese su teléfono" required />
+                <input type="tel" id="phone" class="form-control mb-3 required" placeholder="Ingrese su teléfono"
+                    required />
                 <label for="address"><strong>Domicilio: </strong></label>
-                <input type="text" id="address" class="form-control mb-3 required" placeholder="Ingrese su domicilio" required />
+                <input type="text" id="address" class="form-control mb-3 required" placeholder="Ingrese su domicilio"
+                    required />
             </form>
         </div>
         <div class="container mt-5">
-          <button type="button" class="btn btn-primary" id="btnComprar">COMPRAR</button>
+            <button type="button" class="btn btn-primary" id="btnComprar">COMPRAR</button>
             <button class="btn btn-primary"><a href="../index.html" style="color: white; text-decoration: none;">
-                Seguir comprando
-            </a></button>
+                    Seguir comprando
+                </a></button>
         </div>
     </div>
-    
-      </div>
 
-    </main>
+    <!-- Botón de WhatsApp -->
+    <div id="whatsapp-placeholder"></div>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
         <div>
             <ul class="list-inline">
                 <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Instagram">
                     <a href="https://www.instagram.com/tucumanturismo" class="text-white me-3" target="_blank">
-                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-instagram fs-2"></i>
                     </a>
                 </li>
                 <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Facebook">
                     <a href="https://www.facebook.com/tucumanturismo" class="text-white me-3" target="_blank">
-                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-facebook fs-2"></i>
                     </a>
                 </li>
                 <li class="list-inline-item" data-bs-toggle="tooltip" title="Enviar email">
                     <a href="mailto:informes@tucumanturismo.gob.ar" class="text-white me-3">
-                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-envelope fs-2"></i>
                     </a>
                 </li>
             </ul>

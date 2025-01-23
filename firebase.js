@@ -15,13 +15,13 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-export const getPedidos = async () => {  
-  const querySnapshot = await getDocs(collection(db, 'productos'));  
-  return querySnapshot;
+export const getPedidos = async () => {
+  const querySnapshot = await getDocs(collection(db, 'productos'));  //Obtiene todos los documentos de la colección productos de Firestore
+  return querySnapshot;//Devuelve el resultado
 };
 
-export const getCompra = async ( nombre, precio, talle, cantidad, total) => {  
-  const querySnapshot = await getDocs(collection(db, 'pedidos'), {nombre, precio, talle, cantidad, total});  
+export const getCompra = async (nombre, precio, talle, cantidad, total) => {
+  const querySnapshot = await getDocs(collection(db, 'pedidos'), { nombre, precio, talle, cantidad, total });
   return querySnapshot;
 };
 
@@ -37,17 +37,17 @@ export const deleteProducto = async (productoId) => {
 
 export const eliminarProductos = async () => {
   try {
-      // Obtener todos los documentos de la colección "productos"
-      const querySnapshot = await getDocs(collection(db, 'productos'));
+    // Obtener todos los documentos de la colección "productos"
+    const querySnapshot = await getDocs(collection(db, 'productos'));
 
-      // Iterar sobre los documentos y eliminar cada uno
-      querySnapshot.forEach(async (doc) => {
-          await deleteDoc(doc.ref);
-      });
+    // Iterar sobre los documentos y eliminar cada uno
+    querySnapshot.forEach(async (doc) => {
+      await deleteDoc(doc.ref);
+    });
 
-      console.log('Colección "productos" eliminada correctamente');
+    console.log('Colección "productos" eliminada correctamente');
   } catch (error) {
-      console.error('Error al eliminar la colección "productos":', error);
+    console.error('Error al eliminar la colección "productos":', error);
   }
 };
 

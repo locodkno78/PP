@@ -7,7 +7,6 @@ function updateTable(querySnapshot) {
     const columnNames = [
         "Producto",
         "Precio",
-        "Talle",
         "Cantidad",
         "Subtotal",
         "Eliminar"
@@ -32,18 +31,7 @@ function updateTable(querySnapshot) {
         html += `
             <tr>
                 <td class="nombre">${producto.nombre}</td>
-                <td class="precio">$${producto.precio}</td>
-                <td class="talle columnaT-angosta">
-                    <select class="form-select">
-                        <option selected>Talle</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                    </select>
-                </td>
+                <td class="precio">$${producto.precio}</td>                
                 <td class="cantidad columnaC-angosta">
                     <input type="number" class="form-control cantidad-input" value="${cantidad}" min="1">
                 </td>
@@ -59,7 +47,7 @@ function updateTable(querySnapshot) {
     html += `</tbody>
         <tfoot>
             <tr class="total-row">
-                <td colspan="4" id="total">TOTAL</td>
+                <td colspan="3" id="total">TOTAL</td>
                 <td class="total" id="total">$${total.toFixed(2)}</td>
                 <td></td>
             </tr>
@@ -178,14 +166,12 @@ document.getElementById('btnComprar').addEventListener('click', async (e) => {
             filasProductos.forEach((fila) => {
                 const nombreElement = fila.querySelector('.nombre');
                 const precioElement = fila.querySelector('.precio');
-                const talleElement = fila.querySelector('.talle select');
                 const cantidadElement = fila.querySelector('.cantidad-input');
                 const subtotalElement = fila.querySelector('.subtotal');
         
-                if (nombreElement && precioElement && talleElement && cantidadElement && subtotalElement) {
+                if (nombreElement && precioElement && cantidadElement && subtotalElement) {
                     const nombre = nombreElement.textContent.trim();
                     const precio = parseFloat(precioElement.textContent.replace('$', ''));
-                    const talle = talleElement.value;
                     const cantidad = parseInt(cantidadElement.value) || 1;
                     const subtotal = parseFloat(subtotalElement.textContent.replace('$', ''));
         
@@ -193,7 +179,6 @@ document.getElementById('btnComprar').addEventListener('click', async (e) => {
                     pedido.productos.push({
                         nombre: nombre,
                         precio: precio,
-                        talle: talle,
                         cantidad: cantidad,
                         subtotal: subtotal,
                     });

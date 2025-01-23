@@ -1,566 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
-    />
-    <title>Card 3</title>
-  </head>
 
-  <body>
-    <div id="navbar-placeholder"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-4">
-          <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#empanadas"
-          >
-            <img
-              src="../img/card3/empanadas.jpg"
-              class="img-fixed rounded"
-              alt="empanadas"
-              data-bs-toggle="tooltip"
-              title="Ver receta"
-            />
-          </button>
-          <div
-            class="modal fade"
-            id="empanadas"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Empanadas Tucumanas
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <li>
-                    La masa: unir todos los ingredientes para formar una masa.
-                    Darle forma de cilindro, dividirlo en rodajas de 1 cm de
-                    espesor. Amasar cada rodaja de masa para que quede bien
-                    unida y tierna. Tapar y dejar descansar.
-                  </li>
-                  <li>
-                    El relleno: hervir 3 litros de agua con las verduritas para
-                    el caldo y la cucharada de sal gruesa. Agregar el matambre
-                    desgrasado y dejar cocinar hasta que esté muy tierno (por lo
-                    menos 1 1/2 hora). Escurrirlo, colar el caldo y ponerlo en
-                    la heladera.
-                  </li>
-                  <li>Raspar bien el matambre para que quede bien limpio.</li>
-                  <li>
-                    Separar la carne en hebras, con las manos, como quien
-                    deshilacha una tela. Cortar las hebras en cuadraditos bien
-                    pequeños.
-                  </li>
-                  <li>Limpiar y picar las cebollas de verdeo.</li>
-                  <li>
-                    Derretir en una cacerola la grasa de pella con el aceite.
-                  </li>
-                  <li>
-                    Rehogar la cebolla común hasta que esté tierna. Retirarla
-                    del fuego y agregar la cebollita de verdeo picada, sal,
-                    pimienta, pimentón, comino, azúcar y ají molido.
-                  </li>
-                  <li>
-                    Agregar 2 tazas del caldo que se reservó, llevar al fuego,
-                    incorporar el matambre cortadito.
-                  </li>
-                  <li>
-                    Hervir todo junto unos minutos. Tapar, dejar enfriar en la
-                    heladera hasta el día siguiente.
-                  </li>
-                  <li>
-                    Armado: estirar cada bollito en forma circular, rellenar con
-                    la mezcla fría, poner un poco de huevo duro picado, hacer
-                    las empanadas con 13 repulgos, acomodar en placas engrasadas
-                    y hornear a fuego fuerte.
-                  </li>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+  <title>Card 3</title>
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-4 text-center">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#empanadas">
+          <img src="../img/card3/empanadas.jpg" class="img-fixed rounded" alt="empanadas" data-bs-toggle="tooltip"
+            title="Ver receta" />
+        </button>
+        <div class="modal fade" id="empanadas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Empanadas Tucumanas
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>
+                  La masa: unir todos los ingredientes para formar una masa.
+                  Darle forma de cilindro, dividirlo en rodajas de 1 cm de
+                  espesor. Amasar cada rodaja de masa para que quede bien
+                  unida y tierna. Tapar y dejar descansar.
+                </li>
+                <li>
+                  El relleno: hervir 3 litros de agua con las verduritas para
+                  el caldo y la cucharada de sal gruesa. Agregar el matambre
+                  desgrasado y dejar cocinar hasta que esté muy tierno (por lo
+                  menos 1 1/2 hora). Escurrirlo, colar el caldo y ponerlo en
+                  la heladera.
+                </li>
+                <li>Raspar bien el matambre para que quede bien limpio.</li>
+                <li>
+                  Separar la carne en hebras, con las manos, como quien
+                  deshilacha una tela. Cortar las hebras en cuadraditos bien
+                  pequeños.
+                </li>
+                <li>Limpiar y picar las cebollas de verdeo.</li>
+                <li>
+                  Derretir en una cacerola la grasa de pella con el aceite.
+                </li>
+                <li>
+                  Rehogar la cebolla común hasta que esté tierna. Retirarla
+                  del fuego y agregar la cebollita de verdeo picada, sal,
+                  pimienta, pimentón, comino, azúcar y ají molido.
+                </li>
+                <li>
+                  Agregar 2 tazas del caldo que se reservó, llevar al fuego,
+                  incorporar el matambre cortadito.
+                </li>
+                <li>
+                  Hervir todo junto unos minutos. Tapar, dejar enfriar en la
+                  heladera hasta el día siguiente.
+                </li>
+                <li>
+                  Armado: estirar cada bollito en forma circular, rellenar con
+                  la mezcla fría, poner un poco de huevo duro picado, hacer
+                  las empanadas con 13 repulgos, acomodar en placas engrasadas
+                  y hornear a fuego fuerte.
+                </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
-          <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#humita"
-          >
-            <img
-              src="../img/card3/humita.jpg"
-              class="img-fixed rounded"
-              alt="humita"
-              data-bs-toggle="tooltip"
-              title="Ver receta"
-            />
-          </button>
-          <div
-            class="modal fade"
-            id="humita"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="humita">Humita</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <li>
-                    Rallar los choclos o desgranarlos y luego mixearlos. Debe
-                    quedar como una crema. Reservar.
-                  </li>
-                  <li>Cocinar la calabaza y hacer un puré. Reservar.</li>
-                  <li>
-                    Calentar el aceite de oliva en una olla y agregar la cebolla
-                    y el pimiento morrón cortado bien pequeño. Cocinar hasta que
-                    la cebolla esté transparente. Agregar el tomate cortado en
-                    cubitos junto a la cebolla de verdeo cortada bien fina.
-                    Salpimentar y bajar el fuego a mínimo.
-                  </li>
-                  <li>
-                    Añadir los choclos triturados y cocinar por 5 minutos.
-                    Agregar el puré de calabaza, una cucharada de azúcar,
-                    salpimentar y condimentar a gusto.
-                  </li>
-                  <li>
-                    Cocinar a fuego bajo hasta que espese, unos 10 minutos más
-                    aproximadamente. En el caso que se seque mucho agregar un
-                    poco de leche.
-                  </li>
-                  <li>
-                    Una vez listo retirar del fuego y mezclar con queso fresco
-                    en cubos hasta que se derrita.
-                  </li>
-                  <li>
-                    Servir en cazuelas con verdeo o ciboulette por encima.
-                  </li>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                </div>
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#humita">
+          <img src="../img/card3/humita.jpg" class="img-fixed rounded" alt="humita" data-bs-toggle="tooltip"
+            title="Ver receta" />
+        </button>
+        <div class="modal fade" id="humita" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="humita">Humita</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>
+                  Rallar los choclos o desgranarlos y luego mixearlos. Debe
+                  quedar como una crema. Reservar.
+                </li>
+                <li>Cocinar la calabaza y hacer un puré. Reservar.</li>
+                <li>
+                  Calentar el aceite de oliva en una olla y agregar la cebolla
+                  y el pimiento morrón cortado bien pequeño. Cocinar hasta que
+                  la cebolla esté transparente. Agregar el tomate cortado en
+                  cubitos junto a la cebolla de verdeo cortada bien fina.
+                  Salpimentar y bajar el fuego a mínimo.
+                </li>
+                <li>
+                  Añadir los choclos triturados y cocinar por 5 minutos.
+                  Agregar el puré de calabaza, una cucharada de azúcar,
+                  salpimentar y condimentar a gusto.
+                </li>
+                <li>
+                  Cocinar a fuego bajo hasta que espese, unos 10 minutos más
+                  aproximadamente. En el caso que se seque mucho agregar un
+                  poco de leche.
+                </li>
+                <li>
+                  Una vez listo retirar del fuego y mezclar con queso fresco
+                  en cubos hasta que se derrita.
+                </li>
+                <li>
+                  Servir en cazuelas con verdeo o ciboulette por encima.
+                </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
-          <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#locro"
-          >
-            <img
-              src="../img/card3/locro.jpg"
-              class="img-fixed rounded"
-              alt="locro"
-              data-bs-toggle="tooltip"
-              title="Ver receta"
-            />
-          </button>
-          <div
-            class="modal fade"
-            id="locro"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="locro">Locro</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <li>
-                    Remojar los porotos pallares y el maíz blanco 24 horas antes
-                    de preparar el guiso (guardar en recipiente con agua en
-                    heladera).
-                  </li>
-                  <li>Cortar en cubos todos los ingredientes.</li>
-                  <li>
-                    Cocinar en una cacerola el maíz junto con los porotos, la
-                    calabaza y la cebolla con 2 litros de agua.
-                  </li>
-                  <li>Revolver con cuchara de madera cada 15 minutos.</li>
-                  <li>
-                    Pasada una hora de cocción sumar las carnes. Revolver.
-                  </li>
-                  <li>
-                    La salsa picante. Picar la cebolla de verdeo y verterla en
-                    una ollita con el aceite a baja temperatura. La idea es que
-                    se cocine lento y no quede crujiente.
-                  </li>
-                  <li>
-                    Añadir 2 cucharadas de pimentón y 2 cucharadas de ají molido
-                    a medio vaso de agua y sumarlo al aceite. Mezclar. Cocinar 5
-                    minutos más y retirar.
-                  </li>
-                  <li>
-                    Servir el locro bien caliente en cazuela de barro y la salsa
-                    picante en recipiente aparte para incorporar a gusto.
-                  </li>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                </div>
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#locro">
+          <img src="../img/card3/locro.jpg" class="img-fixed rounded" alt="locro" data-bs-toggle="tooltip"
+            title="Ver receta" />
+        </button>
+        <div class="modal fade" id="locro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="locro">Locro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>
+                  Remojar los porotos pallares y el maíz blanco 24 horas antes
+                  de preparar el guiso (guardar en recipiente con agua en
+                  heladera).
+                </li>
+                <li>Cortar en cubos todos los ingredientes.</li>
+                <li>
+                  Cocinar en una cacerola el maíz junto con los porotos, la
+                  calabaza y la cebolla con 2 litros de agua.
+                </li>
+                <li>Revolver con cuchara de madera cada 15 minutos.</li>
+                <li>
+                  Pasada una hora de cocción sumar las carnes. Revolver.
+                </li>
+                <li>
+                  La salsa picante. Picar la cebolla de verdeo y verterla en
+                  una ollita con el aceite a baja temperatura. La idea es que
+                  se cocine lento y no quede crujiente.
+                </li>
+                <li>
+                  Añadir 2 cucharadas de pimentón y 2 cucharadas de ají molido
+                  a medio vaso de agua y sumarlo al aceite. Mezclar. Cocinar 5
+                  minutos más y retirar.
+                </li>
+                <li>
+                  Servir el locro bien caliente en cazuela de barro y la salsa
+                  picante en recipiente aparte para incorporar a gusto.
+                </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
-          <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#sanguche"
-          >
-            <img
-              src="../img/card3/Sanguche-de-Milanesa.jpg"
-              class="img-fixed rounded"
-              alt="sand. milanesa"
-              data-bs-toggle="tooltip"
-              title="Ver receta"
-            />
-          </button>
-          <div
-            class="modal fade"
-            id="sanguche"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="sanguche">
-                    Sanguche de Milanesa
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <li>
-                    Estirar la carne de milanesa con el martillito de carne y
-                    pincharla con un tenedor.
-                  </li>
-                  <li>
-                    Macerar la carne en el huevo batido con ajo picado, sal
-                    pimienta y perejil fresco picado.
-                  </li>
-                  <li>
-                    Apanar la carne con pan rallado, cubrirla con un separador
-                    de nylon y aplastarla con el palote.
-                  </li>
-                  <li>
-                    Freír en abundante aceite vuelta y vuelta, apenas dorada,
-                    para que la carne no se endurezca.
-                  </li>
-                  <li>
-                    Para alivianar la mayonesa, añadirle una cucharada de leche
-                    y mezclar.
-                  </li>
-                  <li>
-                    Cortar la lechuga en tiritas bien finas y los tomates en
-                    rodajas finas también.
-                  </li>
-                  <li>
-                    Cortar la en lonjas del ancho del pan y superponerlas. La
-                    salsa picante. Unir todos los ingredientes.
-                  </li>
-                  <li>
-                    Armar el sándwich con la milanesa, la lechuga, el tomate, la
-                    mayonesa y si se desea, la salsa picante.
-                  </li>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                </div>
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sanguche">
+          <img src="../img/card3/Sanguche-de-Milanesa.jpg" class="img-fixed rounded" alt="sand. milanesa"
+            data-bs-toggle="tooltip" title="Ver receta" />
+        </button>
+        <div class="modal fade" id="sanguche" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="sanguche">
+                  Sanguche de Milanesa
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>
+                  Estirar la carne de milanesa con el martillito de carne y
+                  pincharla con un tenedor.
+                </li>
+                <li>
+                  Macerar la carne en el huevo batido con ajo picado, sal
+                  pimienta y perejil fresco picado.
+                </li>
+                <li>
+                  Apanar la carne con pan rallado, cubrirla con un separador
+                  de nylon y aplastarla con el palote.
+                </li>
+                <li>
+                  Freír en abundante aceite vuelta y vuelta, apenas dorada,
+                  para que la carne no se endurezca.
+                </li>
+                <li>
+                  Para alivianar la mayonesa, añadirle una cucharada de leche
+                  y mezclar.
+                </li>
+                <li>
+                  Cortar la lechuga en tiritas bien finas y los tomates en
+                  rodajas finas también.
+                </li>
+                <li>
+                  Cortar la en lonjas del ancho del pan y superponerlas. La
+                  salsa picante. Unir todos los ingredientes.
+                </li>
+                <li>
+                  Armar el sándwich con la milanesa, la lechuga, el tomate, la
+                  mayonesa y si se desea, la salsa picante.
+                </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
-          <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#panchuque"
-          >
-            <img
-              src="../img/card3/panchuque.jpg"
-              class="img-fixed rounded"
-              alt="panchuque"
-              data-bs-toggle="tooltip"
-              title="Ver receta"
-            />
-          </button>
-          <div
-            class="modal fade"
-            id="panchuque"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="panchuque">Panchuque</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <li>
-                    Para comenzar hay que mezclar la leche con la harina y los
-                    huevos. Luego vamos a añadir de a poquito la pimienta y la
-                    sal.
-                  </li>
-                  <li>
-                    Una vez que esté preparada esa masa, se vierta en la fuente.
-                    De esta manera, ya se podrán colocar las salchichas.
-                  </li>
-                  <li>Se deben calentar por unos 10 o 15 minutos.</li>
-                  <li>
-                    Si ya están listos se le pueden agregar aderezos como
-                    mayonesa, salsa golf, ketchup o mostaza.
-                  </li>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                </div>
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#panchuque">
+          <img src="../img/card3/panchuque.jpg" class="img-fixed rounded" alt="panchuque" data-bs-toggle="tooltip"
+            title="Ver receta" />
+        </button>
+        <div class="modal fade" id="panchuque" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="panchuque">Panchuque</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>
+                  Para comenzar hay que mezclar la leche con la harina y los
+                  huevos. Luego vamos a añadir de a poquito la pimienta y la
+                  sal.
+                </li>
+                <li>
+                  Una vez que esté preparada esa masa, se vierta en la fuente.
+                  De esta manera, ya se podrán colocar las salchichas.
+                </li>
+                <li>Se deben calentar por unos 10 o 15 minutos.</li>
+                <li>
+                  Si ya están listos se le pueden agregar aderezos como
+                  mayonesa, salsa golf, ketchup o mostaza.
+                </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
-          <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#mazamorra"
-          >
-            <img
-              src="../img/card3/Carbonada.jpg"
-              class="img-fixed rounded"
-              alt="mazamorra"
-              data-bs-toggle="tooltip"
-              title="Ver receta"
-            />
-          </button>
-          <div
-            class="modal fade"
-            id="mazamorra"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="masamorra">Mazamorra</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <li>Lavar y remojar durante una noche el maíz blanco.</li>
-                  <li>
-                    Al día siguiente, el día de la preparación, comenzar por
-                    poner el maíz con el agua usada para el remojo, en una
-                    cacerola a fuego suave.
-                  </li>
-                  <li>
-                    Cocinar durante 40 minutos o más (agregar agua si es
-                    necesario) hasta que el maís esté bien blando.
-                  </li>
-                  <li>
-                    En otra olla (o en la misma pero habiendo puesto el máiz en
-                    otro recipiente) calentar la leche con el azúcar y la
-                    vainilla.
-                  </li>
-                  <li>
-                    Al romper el hervor de la leche, agregarle el maíz cocido.
-                    Cocinar durante un cuarto de hora el maíz con la leche y
-                    retirar cuando esté espeso.
-                  </li>
-                  <li>
-                    Servir la mazamorra tibia en bols individuales, decorada con
-                    una pizca de azúcar y canela.
-                  </li>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-dismiss="modal"
-                  >
-                    Cerrar
-                  </button>
-                </div>
+      </div>
+      <div class="col-6 col-md-4 text-center">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mazamorra">
+          <img src="../img/card3/Carbonada.jpg" class="img-fixed rounded" alt="mazamorra" data-bs-toggle="tooltip"
+            title="Ver receta" />
+        </button>
+        <div class="modal fade" id="mazamorra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="masamorra">Mazamorra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <li>Lavar y remojar durante una noche el maíz blanco.</li>
+                <li>
+                  Al día siguiente, el día de la preparación, comenzar por
+                  poner el maíz con el agua usada para el remojo, en una
+                  cacerola a fuego suave.
+                </li>
+                <li>
+                  Cocinar durante 40 minutos o más (agregar agua si es
+                  necesario) hasta que el maís esté bien blando.
+                </li>
+                <li>
+                  En otra olla (o en la misma pero habiendo puesto el máiz en
+                  otro recipiente) calentar la leche con el azúcar y la
+                  vainilla.
+                </li>
+                <li>
+                  Al romper el hervor de la leche, agregarle el maíz cocido.
+                  Cocinar durante un cuarto de hora el maíz con la leche y
+                  retirar cuando esté espeso.
+                </li>
+                <li>
+                  Servir la mazamorra tibia en bols individuales, decorada con
+                  una pizca de azúcar y canela.
+                </li>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Botón de WhatsApp -->
-    <a
-      href="https://wa.me/5493812133639"
-      target="_blank"
-      class="whatsapp-button"
-      data-bs-toggle="tooltip"
-      title="Ir a WhatsApp"
-    >
-      <i class="bi bi-whatsapp"></i>
-    </a>
+  <!-- Botón de WhatsApp -->
+  <div id="whatsapp-placeholder"></div>
 
-    <footer class="bg-dark text-white text-center py-4">
-      <div>
-        <ul class="list-inline">
-          <li
-            class="list-inline-item"
-            data-bs-toggle="tooltip"
-            title="Ir a Instagram"
-          >
-            <a
-              href="https://www.instagram.com/tucumanturismo"
-              class="text-white me-3"
-              target="_blank"
-            >
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li
-            class="list-inline-item"
-            data-bs-toggle="tooltip"
-            title="Ir a Facebook"
-          >
-            <a
-              href="https://www.facebook.com/tucumanturismo"
-              class="text-white me-3"
-              target="_blank"
-            >
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li
-            class="list-inline-item"
-            data-bs-toggle="tooltip"
-            title="Enviar email"
-          >
-            <a
-              href="mailto:informes@tucumanturismo.gob.ar"
-              class="text-white me-3"
-            >
-              <i class="bi bi-envelope"></i>
-            </a>
-          </li>
-        </ul>
-        <p>
-          &copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.
-        </p>
-      </div>
-    </footer>
-    <script src="../index.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div>
+      <ul class="list-inline">
+        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Instagram">
+          <a href="https://www.instagram.com/tucumanturismo" class="text-white me-3" target="_blank">
+            <i class="bi bi-instagram fs-2"></i>
+          </a>
+        </li>
+        <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Facebook">
+          <a href="https://www.facebook.com/tucumanturismo" class="text-white me-3" target="_blank">
+            <i class="bi bi-facebook fs-2"></i>
+          </a>
+        </li>
+        <li class="list-inline-item" data-bs-toggle="tooltip" title="Enviar email">
+          <a href="mailto:informes@tucumanturismo.gob.ar" class="text-white me-3">
+            <i class="bi bi-envelope fs-2"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        &copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+  <script src="../index.js"></script>
+</body>
+
 </html>
