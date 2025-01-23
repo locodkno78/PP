@@ -214,6 +214,7 @@ document.getElementById('btnComprar').addEventListener('click', async (e) => {
         
             await eliminarProductos();
             alert('Muchas Gracias por su compra!!!. Un vendedor se pondrá en contacto con usted')
+            window.location.href = '../index.html';
         
             // Volver a cargar la tabla después de agregar el pedido
             cargarProductosEnTabla();
